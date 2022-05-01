@@ -17,8 +17,14 @@
 
 ## 설치방법
 ---
+<br>
+
 ```
 poetry install
+```
+
+```
+/bin/bash script/git-hooks.sh
 ```
 <br>
 <br>
