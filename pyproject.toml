@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "bloud"
+version = "0.1.0"
+description = ""
+authors = ["Daco <dacokim32@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.75.2"
+uvicorn = "^0.17.6"
+pre-commit = "^2.18.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+pyright = "^1.1.242"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 88
+
+[tool.pyright]
+include = ["ap-toy"]
+exclude = ["**/__pycache__"]
+
+reportMissingImports = true
+reportMissingTypeStubs = false
+
+pythonVersion = "3.10.0"
