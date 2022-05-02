@@ -1,4 +1,6 @@
-# import requests
+import collections
+import re
+
 import requests
 
 from bs4 import BeautifulSoup
@@ -14,6 +16,11 @@ def test_request(url):
         html_doc = fetch(session, url)
 
     soup = BeautifulSoup(html_doc, "html.parser")
-    r = soup.prettify()
-
-    return r
+    soup.prettify()
+    result = soup.find("div", "atom-one")
+    string = re.compile("[가-힣]+").findall(str(result))
+    print(string)
+    dict = collections.Counter(string)
+    print(dict)
+    a = sorted(dict.items(), key=lambda x: x[1], reverse=True)
+    return a
