@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Body
 
 from bloud.api.scraper import test_request
 
@@ -6,10 +6,7 @@ from bloud.api.scraper import test_request
 router = APIRouter()
 
 
-@router.post("/word-cloud", tags=["word-cloud"])
-async def create_word_cloud():
-
-    mock_url = "https://velog.io/@locked/Flutter-3D-Layer-Card"
-    r = test_request(mock_url)
-
-    return {"message": r}
+@router.post("/search", tags=["word-cloud"])
+async def create_word_cloud(url: str = Body(..., embed=True)):
+    result = test_request(url)
+    return {"result": result}
