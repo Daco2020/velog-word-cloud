@@ -1,15 +1,12 @@
 from fastapi import APIRouter, Body
 
-from bloud.api.scraper import test_request
+from bloud.scraper import scraping_velog
 
 
 router = APIRouter()
 
-VELOG_URL_PREFIX = "https://velog.io/@"
 
-
-@router.post("/search", tags=["word-cloud"])
-async def create_word_cloud(id: str = Body(..., embed=True)):
-    url = VELOG_URL_PREFIX + id
-    result = await test_request(url)
+@router.post("/search")
+async def search(id: str = Body(..., embed=True), limit: int = 50):
+    result = await scraping_velog(id, limit)
     return {"result": result}

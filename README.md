@@ -9,7 +9,7 @@
 언어 : Python 3.8 <br>
 프레임워크 : FastAPI 0.75.1 <br>
 데이터베이스 : Not used <br>
-
+스크래핑 사용기술 : BeautifulSoup, konlpy
 
 <br>
 <br>
@@ -39,6 +39,7 @@ poetry install
 
 ## 진행상황
 ---
+- scraper 구현
 - pre-commit 세팅  
     - 포멧팅 : black,flake8,isort,pyright
     - 커밋메시지 : commit-msg
@@ -55,24 +56,5 @@ poetry install
 ---
 
 ```
-.
-├── README.md
-├── app
-│   ├── __init__.py
-│   ├── api
-│   │   ├── __init__.py
-│   │   └── word_cloud.py
-│   ├── config.py
-│   ├── database.py
-│   ├── main.py
-│   ├── models.py
-│   ├── query.py
-│   └── schemas.py
-├── commit-msg.py
-├── poetry.lock
-├── pyproject.toml
-├── run-server.py
-├── scripts
-│   └── git-hooks.sh
-└── setup.cfg
+
 ```
