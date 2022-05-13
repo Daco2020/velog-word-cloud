@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from bloud.api.word_cloud import router
+from app.api.word_cloud import router
 
 
 app = FastAPI()

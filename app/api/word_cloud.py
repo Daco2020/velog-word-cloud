@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Body
 
-from bloud.scraper import scraping_velog
+from app.scraper import scraping_velog
 
 
 router = APIRouter()

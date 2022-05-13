@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from konlpy.tag import Komoran
 from requests import Session
 
-from bloud.constant import EXCLUDE_TXT, JAVA_HOME, VELOG_URL_PREFIX
+from app.constant import EXCLUDE_TXT, JAVA_HOME, VELOG_URL_PREFIX
 
 
 async def scraping_velog(id: str, limit: int) -> list:
