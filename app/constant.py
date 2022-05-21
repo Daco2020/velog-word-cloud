@@ -1,7 +1,10 @@
-JAVA_HOME = """/Library/Java/JavaVirtualMachines/\
-jdk1.8.0_333.jdk/Contents/Home/jre/lib/jli/libjli.dylib"""
+import os
 
-VELOG_URL_PREFIX = """https://velog.io/@"""
+
+JAVA_HOME = os.environ["JAVA_HOME"]
+FONT_PATH = "/Users/daco/Library/Fonts/KoPub Dotum Bold.ttf"
+
+VELOG_URL_PREFIX = "https://velog.io/@"
 
 EXCLUDE_TXT = """
 니다,거지,지금,가요,라고,경우,가지,대부분,때문,먼저,

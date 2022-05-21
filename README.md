@@ -8,8 +8,9 @@
 ---
 언어 : Python 3.8 <br>
 프레임워크 : FastAPI 0.75.1 <br>
+스크래핑 기술 : BeautifulSoup, konlpy <br>
+워드클라우드 기술 : WordCloud, matplotlib <br>
 데이터베이스 : Not used <br>
-스크래핑 사용기술 : BeautifulSoup, konlpy
 
 <br>
 <br>
@@ -23,9 +24,6 @@
 poetry install
 ```
 
-```
-/bin/bash script/git-hooks.sh
-```
 <br>
 <br>
 
@@ -39,6 +37,7 @@ poetry install
 
 ## 진행상황
 ---
+- wordcloud 이미지 생성 로직 구현
 - scraper 구현
 - pre-commit 세팅  
     - 포멧팅 : black,flake8,isort,pyright
@@ -56,5 +55,23 @@ poetry install
 ---
 
 ```
-
+.
+├── README.md
+├── app
+│   ├── __init__.py
+│   ├── api
+│   │   ├── __init__.py
+│   │   └── wordcloud.py
+│   ├── constant.py
+│   ├── img
+│   ├── main.py
+│   ├── scraper.py
+│   └── wordcloud.py
+├── commit-msg.py
+├── poetry.lock
+├── pyproject.toml
+├── run-server.py
+├── script
+│   └── git-hooks.sh
+└── setup.cfg
 ```
