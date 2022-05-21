@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from app.api.word_cloud import router
+from app.api.wordcloud import router
 
 
 app = FastAPI()

@@ -1,5 +1,7 @@
-import collections
 import re
+
+from collections import Counter
+from typing import Dict, List
 
 from bs4 import BeautifulSoup
 from konlpy.tag import Komoran
@@ -8,7 +10,7 @@ from requests import Session
 from app.constant import EXCLUDE_TXT, JAVA_HOME, VELOG_URL_PREFIX
 
 
-async def scraping_velog(id: str, limit: int) -> list:
+async def scraping_velog(id: str) -> Dict[str, int]:
     url = VELOG_URL_PREFIX + id
     with Session() as session:
         html_doc = await fetch(session, url)
@@ -16,7 +18,7 @@ async def scraping_velog(id: str, limit: int) -> list:
     soup = BeautifulSoup(html_doc, "html.parser")
     soup.prettify()
 
-    target_html = soup.find_all("div", "gVEHog")
+    target_html = soup.find_all("div", "dia-DEN")
     targets = [tag.a.get("href") for tag in target_html][:10]
     nlps = []
     for target in targets:
@@ -24,7 +26,7 @@ async def scraping_velog(id: str, limit: int) -> list:
         nlps += await extract_nlp(url)
 
     words = exclude_word(nlps)
-    return sort_by_count(words)[:limit]
+    return count_words(words)
 
 
 async def extract_nlp(url: str) -> list:
@@ -48,10 +50,10 @@ async def fetch(session: Session, url: str) -> str:
         return response.text
 
 
-def exclude_word(words: list) -> list:
+def exclude_word(words: List[str]) -> List:
     return [word for word in words if word not in EXCLUDE_TXT]
 
 
-def sort_by_count(words: list) -> list:
-    count_words = collections.Counter([word for word in words if len(word) > 1])
-    return sorted(count_words.items(), key=lambda x: x[1], reverse=True)
+def count_words(words: List[str]) -> Dict[str, int]:
+    word_count = dict(Counter([word for word in words if len(word) > 1]))
+    return word_count
