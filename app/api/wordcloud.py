@@ -12,4 +12,4 @@ router = APIRouter()
 async def search(id: str = Body(..., embed=True)):
     content = await scraping_velog(id)
     img_path = wordcloud(content, id)
-    return FileResponse(img_path)
+    return FileResponse(path=img_path, media_type="image/png")

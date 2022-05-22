@@ -37,6 +37,7 @@ poetry install
 
 ## 진행상황
 ---
+- 이미지 반환 및 프론트 페이지 구현
 - wordcloud 이미지 생성 로직 구현
 - scraper 구현
 - pre-commit 세팅  
