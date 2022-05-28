@@ -1,83 +1,74 @@
 anyio==3.5.0
-asgiref @ file:///Users/daco/Library/Caches/pypoetry/artifacts/43/e6/fa/43d63c138ceb5a122d5ce7ff17e1e3ad821c68d0b4b00ff99d8202ef09/asgiref-3.5.1-py3-none-any.whl
-beautifulsoup4 @ file:///Users/daco/Library/Caches/pypoetry/artifacts/ce/13/0d/ce3a1461e71c67309bbfb28e32ea8186ff7c831d213170cdb54055ea84/beautifulsoup4-4.11.1-py3-none-any.whl
-black @ file:///Users/daco/Library/Caches/pypoetry/artifacts/11/4c/fc/cd6d885e9f5be135b161e365b11312cff5920d7574c8446833d7a9b1a3/black-22.3.0-cp38-cp38-macosx_10_9_x86_64.whl
 bloud==0.1.0
 CacheControl==0.12.11
 cachy==0.3.0
 certifi==2021.10.8
-cfgv @ file:///Users/daco/Library/Caches/pypoetry/artifacts/07/9a/ee/962c2dab45907e4fd1a13afc30753a15fe678f1dcf2c862a9794ed748b/cfgv-3.3.1-py2.py3-none-any.whl
+
 charset-normalizer==2.0.12
 cleo==0.8.1
-click @ file:///Users/daco/Library/Caches/pypoetry/artifacts/bd/9c/91/fc982221d93312eb60d91ed31ec2945771bec0eb111953316ae8293dce/click-8.1.3-py3-none-any.whl
+
 clikit==0.6.2
 crashtest==0.3.1
 cycler==0.11.0
 distlib==0.3.4
 fastapi==0.75.2
 filelock==3.6.0
-flake8 @ file:///Users/daco/Library/Caches/pypoetry/artifacts/0d/4b/21/8c766e4015d3210fdbf8d1091620d52db306cd8c85ba8f2b37ebf48a75/flake8-4.0.1-py2.py3-none-any.whl
+
 fonttools==4.33.3
-h11 @ file:///Users/daco/Library/Caches/pypoetry/artifacts/bc/d7/e2/6d144112b0c47a5ee4e22c53b271dc73b63c1e64e15aca149164758406/h11-0.13.0-py3-none-any.whl
+
 html5lib==1.1
-identify @ file:///Users/daco/Library/Caches/pypoetry/artifacts/5e/05/68/2886b4fe1192ba25e26dabe435fab56e6876354305d679e46cd799cb36/identify-2.5.0-py2.py3-none-any.whl
+
 idna==3.3
 importlib-metadata==4.11.3
-isort @ file:///Users/daco/Library/Caches/pypoetry/artifacts/08/6b/bf/a994a4feb3ad0863ccc2edf385a86c88314f00f00732f08093af5fa3dc/isort-5.10.1-py3-none-any.whl
+
 joblib==1.1.0
-JPype1 @ file:///Users/runner/miniforge3/conda-bld/jpype1_1636587972655/work
+
 keyring==23.5.0
 kiwisolver==1.4.2
-konlpy @ file:///Users/daco/Library/Caches/pypoetry/artifacts/f1/1c/ad/0a5dfd6d2f87f29f6f0ec979c712940f32a52a464b1b8ba38f2bf6ac80/konlpy-0.6.0-py2.py3-none-any.whl
+
 lockfile==0.12.2
-lxml @ file:///Users/daco/Library/Caches/pypoetry/artifacts/37/4f/9a/fd17182583eba7d9bbc79c01842afb4c31487174dafedcf9a292c85de0/lxml-4.8.0-cp38-cp38-macosx_10_14_x86_64.whl
+
 matplotlib==3.5.2
-mccabe @ file:///Users/daco/Library/Caches/pypoetry/artifacts/37/6e/69/4a33a4d6c80c775b1ee205face2c6e07b762c8602bb0f0d236ebe790c5/mccabe-0.6.1-py2.py3-none-any.whl
+
 mecab-ko==1.0.0
 mecab-ko-dic==1.0.0
 mecab-python===0.996-ko-0.9.2
 msgpack==1.0.3
-mypy-extensions @ file:///Users/daco/Library/Caches/pypoetry/artifacts/b6/a0/b0/a5dc9acd6fd12aba308634f21bb7cf0571448f20848797d7ecb327aa12/mypy_extensions-0.4.3-py2.py3-none-any.whl
-nodeenv @ file:///Users/daco/Library/Caches/pypoetry/artifacts/e5/a3/dc/92bd4b7147e57c05532acb667e9e885a9b9a2425965963dbb0f451a30b/nodeenv-1.6.0-py2.py3-none-any.whl
-numpy @ file:///Users/daco/Library/Caches/pypoetry/artifacts/4f/d1/d7/8d093793f8eba59dd4f8429abfc31414ef98d639be7eb02e5f630cacc6/numpy-1.22.3-cp38-cp38-macosx_10_14_x86_64.whl
-packaging @ file:///Users/daco/Library/Caches/pypoetry/artifacts/7f/d5/4c/1d3c4776012fc0bbe1f86e69bde2c5e36d2d32caa2e4845ac1fc08ab3f/packaging-21.3-py3-none-any.whl
 pastel==0.2.1
-pathspec @ file:///Users/daco/Library/Caches/pypoetry/artifacts/04/91/14/294ed2ee6c852b0d466bdd15d393127eff4168b35ae81cedf5a03fe348/pathspec-0.9.0-py2.py3-none-any.whl
+
 pexpect==4.8.0
 Pillow==9.1.1
 pkginfo==1.8.2
 platformdirs==2.5.2
 poetry==1.1.13
 poetry-core==1.0.8
-pre-commit @ file:///Users/daco/Library/Caches/pypoetry/artifacts/f2/0a/ee/4475958035048896e2912642b9ab4166cc9928295796ecd915b4ebcac0/pre_commit-2.18.1-py2.py3-none-any.whl
+
 psutil==5.9.0
 ptyprocess==0.7.0
-pycodestyle @ file:///Users/daco/Library/Caches/pypoetry/artifacts/c8/b5/c4/20e98d955193296673ec9d57510115c96ea8c60a7e2cd212c3999f9d20/pycodestyle-2.8.0-py2.py3-none-any.whl
+
 pydantic==1.9.0
-pyflakes @ file:///Users/daco/Library/Caches/pypoetry/artifacts/f2/d6/08/0d69fadd16b2e7ec2870ad6286f0929fbb102236d0ae0890816d760f32/pyflakes-2.4.0-py2.py3-none-any.whl
+
 pylev==1.4.0
-pyparsing @ file:///Users/daco/Library/Caches/pypoetry/artifacts/4a/b9/34/28557b740fb51bd635f6794a95d02e23de02724e07f03c3ad49cebcf86/pyparsing-3.0.9-py3-none-any.whl
-pyright @ file:///Users/daco/Library/Caches/pypoetry/artifacts/a1/14/35/fbb8a4ef5aafccd14b166c035b7a2eee0d4a1784df791244827b766afc/pyright-1.1.242-py3-none-any.whl
 python-dateutil==2.8.2
-PyYAML @ file:///Users/daco/Library/Caches/pypoetry/artifacts/f0/ae/ac/3d7d408acba599bb6f26145f4ccfa63e42769a71f67bc8d5b643946261/PyYAML-6.0-cp38-cp38-macosx_10_9_x86_64.whl
+
 requests==2.27.1
 requests-toolbelt==0.9.1
 scikit-learn==1.0.2
 scipy==1.8.0
-setuptools-scm @ file:///Users/daco/Library/Caches/pypoetry/artifacts/e6/44/32/64b792477e12ac4db04f7195b7a5e9b011013d630ced2cc609ef1bbb27/setuptools_scm-6.4.2-py3-none-any.whl
+
 shellingham==1.4.0
 six==1.16.0
 sniffio==1.2.0
-soupsieve @ file:///Users/daco/Library/Caches/pypoetry/artifacts/b4/47/4f/214202b36a5b60c4ab10c2fc16dc96b3ced1dd697a73871df11150ff41/soupsieve-2.3.2.post1-py3-none-any.whl
+
 soynlp==0.0.493
 starlette==0.17.1
 threadpoolctl==3.1.0
-toml @ file:///Users/daco/Library/Caches/pypoetry/artifacts/9f/8c/c3/7b4f6778d60f3c9fa11f8fd0e48243bbad25a04975e0a01006b6350594/toml-0.10.2-py2.py3-none-any.whl
-tomli @ file:///Users/daco/Library/Caches/pypoetry/artifacts/36/bd/11/98fa2af866c73d00f2498ade62c7fcf28db8656714b7b7a44e9cb2f855/tomli-2.0.1-py3-none-any.whl
+
+
 tomlkit==0.10.2
 typing_extensions==4.2.0
 urllib3==1.26.9
-uvicorn @ file:///Users/daco/Library/Caches/pypoetry/artifacts/a2/ff/79/8a3b922b9503477cb5389145687486c86ba435d1a54d9d62db03ccdd96/uvicorn-0.17.6-py3-none-any.whl
+
 virtualenv==20.14.1
 webencodings==0.5.1
 wordcloud==1.8.1
