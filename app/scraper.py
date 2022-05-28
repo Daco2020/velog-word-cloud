@@ -10,7 +10,7 @@ from requests import Session
 from app.constant import EXCLUDE_TXT, JAVA_HOME, VELOG_URL_PREFIX
 
 
-async def scraping_velog(id: str) -> Dict[str, int]:
+async def scraping_velog(id: str, limit: int) -> Dict[str, int]:
     url = VELOG_URL_PREFIX + id
     with Session() as session:
         html_doc = await fetch(session, url)
@@ -19,7 +19,7 @@ async def scraping_velog(id: str) -> Dict[str, int]:
     soup.prettify()
 
     target_html = soup.find_all("div", "dia-DEN")
-    targets = [tag.a.get("href") for tag in target_html][:10]
+    targets = [tag.a.get("href") for tag in target_html][:limit]
     nlps = []
     for target in targets:
         url = f"https://velog.io{target}"
